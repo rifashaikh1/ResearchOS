@@ -1,0 +1,109 @@
+/* TopBar Component Styles */
+
+.topbar-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  flex-shrink: 0;
+}
+
+.topbar-search-container {
+  flex: 1;
+  max-width: 576px;
+}
+
+.topbar-search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.topbar-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6B7C93;
+  pointer-events: none;
+}
+
+.topbar-search-input {
+  width: 100%;
+  padding: 8px 48px 8px 36px;
+  font-size: 13px;
+  background-color: #F7F9FC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  outline: none;
+  color: #0B1220;
+  transition: all 0.15s ease;
+}
+
+.topbar-search-input::placeholder {
+  color: #A0AEBF;
+}
+
+.topbar-search-input:focus {
+  border-color: #0F9D8A;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(15, 157, 138, 0.1);
+}
+
+.topbar-kbd-badge {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
+  color: #A0AEBF;
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.topbar-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.topbar-action-btn {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #6B7C93;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.topbar-action-btn:hover {
+  background-color: #F7F9FC;
+  color: #0B1220;
+}
+
+.topbar-notification-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: #22C7D6;
+  border-radius: 9999px;
+  border: 1px solid #ffffff;
+}

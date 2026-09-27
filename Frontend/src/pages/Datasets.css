@@ -1,0 +1,238 @@
+/* Datasets Page Styles */
+.datasets-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.datasets-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.datasets-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0B1220;
+  margin: 0;
+}
+
+.datasets-subtitle {
+  font-size: 13px;
+  color: #6B7C93;
+  margin: 2px 0 0 0;
+}
+
+.datasets-upload-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #0F9D8A 0%, #0D8A78 100%);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.datasets-upload-btn:hover {
+  opacity: 0.9;
+}
+
+.datasets-filter-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.datasets-filter-tab {
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 1px solid #E2E8F0;
+  background-color: #ffffff;
+  color: #6B7C93;
+}
+
+.datasets-filter-tab:hover {
+  border-color: rgba(15, 157, 138, 0.4);
+  color: #0F9D8A;
+}
+
+.datasets-filter-tab.active {
+  background-color: #0F9D8A;
+  color: #ffffff;
+  border-color: #0F9D8A;
+}
+
+.datasets-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .datasets-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .datasets-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.datasets-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 3px rgba(11, 18, 32, 0.06), 0 1px 2px rgba(11, 18, 32, 0.04);
+}
+
+.datasets-card:hover {
+  border-color: rgba(15, 157, 138, 0.25);
+  box-shadow: 0 4px 12px rgba(11, 18, 32, 0.08);
+}
+
+.datasets-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.datasets-card-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #E6F7F5 0%, #EBF8FF 100%);
+  border: 1px solid rgba(15, 157, 138, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datasets-badges-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.datasets-type-badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.datasets-type-badge.NLP {
+  background-color: #FAF5FF;
+  color: #9333EA;
+}
+
+.datasets-type-badge.Vision {
+  background-color: #EFF6FF;
+  color: #2563EB;
+}
+
+.datasets-type-badge.Tabular {
+  background-color: #FFFBEB;
+  color: #D97706;
+}
+
+.datasets-archived-badge {
+  font-size: 10.5px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background-color: #F7F9FC;
+  color: #A0AEBF;
+  border: 1px solid #E2E8F0;
+}
+
+.datasets-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0B1220;
+  margin: 0 0 4px 0;
+  transition: color 0.15s ease;
+}
+
+.datasets-card:hover .datasets-card-title {
+  color: #0F9D8A;
+}
+
+.datasets-card-desc {
+  font-size: 12px;
+  color: #6B7C93;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.datasets-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.datasets-stat-box {
+  background-color: #F7F9FC;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.datasets-stat-label {
+  font-size: 10px;
+  color: #A0AEBF;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.datasets-stat-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0B1220;
+  font-family: 'DM Mono', monospace;
+  margin: 2px 0 0 0;
+}
+
+.datasets-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.datasets-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.datasets-tag-pill {
+  font-size: 10px;
+  padding: 2px 6px;
+  background-color: #F0F4F8;
+  color: #6B7C93;
+  border-radius: 4px;
+}
+
+.datasets-time-text {
+  font-size: 11px;
+  color: #A0AEBF;
+}

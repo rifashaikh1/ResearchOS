@@ -1,0 +1,235 @@
+/* InviteResearcher Modal Styles */
+.invite-res-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.invite-res-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 480px;
+  margin: 0 16px;
+  padding: 24px;
+}
+
+.invite-res-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.invite-res-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0B1220;
+  margin: 0;
+}
+
+.invite-res-sub {
+  font-size: 12px;
+  color: #94A3B8;
+  margin: 2px 0 0 0;
+}
+
+.invite-res-close-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #94A3B8;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.invite-res-close-btn:hover {
+  background-color: #F1F5F9;
+}
+
+.invite-res-success-wrap {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.invite-res-success-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #0F9D8A 0%, #22C7D6 100%);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0 auto 12px auto;
+}
+
+.invite-res-success-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0B1220;
+  margin: 0 0 4px 0;
+}
+
+.invite-res-success-desc {
+  font-size: 13px;
+  color: #6B7C93;
+  margin: 0;
+}
+
+.invite-res-done-btn {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #0F9D8A 0%, #22C7D6 100%);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.invite-res-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.invite-res-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #0B1220;
+  margin-bottom: 6px;
+}
+
+.invite-res-opt-tag {
+  color: #94A3B8;
+  font-weight: 400;
+}
+
+.invite-res-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'DM Mono', monospace, monospace;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.invite-res-input:focus {
+  border-color: #0F9D8A;
+  box-shadow: 0 0 0 2px rgba(15, 157, 138, 0.1);
+}
+
+.invite-res-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.invite-res-role-card {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: #ffffff;
+}
+
+.invite-res-role-card:hover {
+  border-color: #94A3B8;
+}
+
+.invite-res-role-card.selected {
+  border-color: #0F9D8A;
+  background: #E6F7F5;
+}
+
+.invite-res-role-name {
+  font-weight: 500;
+  color: #0B1220;
+}
+
+.invite-res-role-desc {
+  font-size: 11px;
+  color: #94A3B8;
+  margin-top: 2px;
+}
+
+.invite-res-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  outline: none;
+  resize: none;
+  transition: border-color 0.15s ease;
+}
+
+.invite-res-textarea:focus {
+  border-color: #0F9D8A;
+}
+
+.invite-res-btn-row {
+  display: flex;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.invite-res-cancel-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  color: #6B7C93;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.invite-res-cancel-btn:hover {
+  background-color: #F7F9FC;
+}
+
+.invite-res-submit-btn {
+  flex: 1;
+  padding: 10px;
+  background: linear-gradient(135deg, #0F9D8A 0%, #22C7D6 100%);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.15s ease;
+}
+
+.invite-res-submit-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

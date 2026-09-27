@@ -1,0 +1,235 @@
+/* Experiments Page Styles */
+.experiments-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.experiments-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.experiments-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0B1220;
+  margin: 0;
+}
+
+.experiments-subtitle {
+  font-size: 13px;
+  color: #6B7C93;
+  margin: 2px 0 0 0;
+}
+
+.experiments-new-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #0F9D8A 0%, #22C7D6 100%);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.experiments-new-btn:hover {
+  opacity: 0.9;
+}
+
+.experiments-filter-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.experiments-filter-btn {
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.experiments-filter-btn.active {
+  background: #0F9D8A;
+  color: #ffffff;
+}
+
+.experiments-filter-btn.inactive {
+  background: #ffffff;
+  color: #6B7C93;
+  border-color: #E2E8F0;
+}
+
+.experiments-filter-btn.inactive:hover {
+  border-color: rgba(15, 157, 138, 0.4);
+}
+
+.experiments-table-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  overflow: hidden;
+}
+
+.experiments-table-header {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #E2E8F0;
+  background: #F7F9FC;
+}
+
+.experiments-th {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6B7C93;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.experiments-table-body {
+  border-bottom: 1px solid #F0F4F8;
+}
+
+.experiments-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #F0F4F8;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.experiments-row:last-child {
+  border-bottom: none;
+}
+
+.experiments-row:hover {
+  background: #FAFCFE;
+}
+
+.experiments-cell-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0B1220;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  transition: color 0.15s ease;
+}
+
+.experiments-row:hover .experiments-cell-name {
+  color: #0F9D8A;
+}
+
+.experiments-cell-project {
+  font-size: 11px;
+  color: #A0AEBF;
+  margin: 2px 0 0 0;
+}
+
+.experiments-cell-dataset {
+  font-size: 12.5px;
+  color: #3A4A5C;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.experiments-cell-model {
+  font-size: 11px;
+  color: #A0AEBF;
+  margin: 2px 0 0 0;
+}
+
+.experiments-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.experiments-status-pill.completed {
+  background: #ECFDF5;
+  color: #059669;
+}
+
+.experiments-status-pill.running {
+  background: #E6F7F5;
+  color: #0F9D8A;
+}
+
+.experiments-status-pill.failed {
+  background: #FEF2F2;
+  color: #EF4444;
+}
+
+.experiments-status-pill.queued {
+  background: #FFFBEB;
+  color: #D97706;
+}
+
+.experiments-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+}
+
+.experiments-status-dot.completed {
+  background: #10B981;
+}
+
+.experiments-status-dot.running {
+  background: #0F9D8A;
+}
+
+.experiments-status-dot.failed {
+  background: #F87171;
+}
+
+.experiments-status-dot.queued {
+  background: #FBBF24;
+}
+
+.experiments-cell-acc {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0B1220;
+  font-family: 'DM Mono', monospace, monospace;
+  margin: 0;
+}
+
+.experiments-cell-dur {
+  font-size: 12.5px;
+  color: #6B7C93;
+  font-family: 'DM Mono', monospace, monospace;
+  margin: 0;
+}
+
+.experiments-cell-started {
+  font-size: 12px;
+  color: #A0AEBF;
+  margin: 0;
+}

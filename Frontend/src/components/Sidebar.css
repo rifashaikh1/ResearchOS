@@ -1,0 +1,235 @@
+/* Sidebar Component Styles */
+
+.sidebar-container {
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-right: 1px solid #E2E8F0;
+  transition: width 0.2s ease;
+  overflow: hidden;
+  z-index: 30;
+}
+
+.sidebar-container.sidebar-open {
+  width: 240px;
+}
+
+.sidebar-container.sidebar-collapsed {
+  width: 56px;
+}
+
+.sidebar-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 0 12px;
+  gap: 8px;
+}
+
+.sidebar-mark {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.sidebar-wordmark {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-toggle-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: #94A3B8;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.sidebar-toggle-btn:hover {
+  background-color: #F0F4F8;
+  color: #0B1220;
+}
+
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-nav.sidebar-open {
+  padding: 12px;
+}
+
+.sidebar-nav.sidebar-collapsed {
+  padding: 8px 4px;
+}
+
+.sidebar-section-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6B7C93;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 8px;
+  margin-bottom: 8px;
+}
+
+.sidebar-nav-group {
+  margin-top: 20px;
+}
+
+.sidebar-nav-group.sidebar-collapsed {
+  margin-top: 12px;
+}
+
+.sidebar-nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  margin-bottom: 2px;
+  font-size: 13.5px;
+  color: #3A4A5C;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.sidebar-nav-item.sidebar-expanded {
+  gap: 10px;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.sidebar-nav-item.sidebar-item-collapsed {
+  justify-content: center;
+  padding: 10px 4px;
+}
+
+.sidebar-nav-item:hover {
+  background-color: #F7F9FC;
+  color: #0B1220;
+}
+
+.sidebar-nav-item.sidebar-item-active {
+  background-color: #E6F7F5;
+  color: #0F9D8A;
+  font-weight: 500;
+}
+
+.sidebar-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #6B7C93;
+  transition: color 0.15s ease;
+}
+
+.sidebar-nav-item:hover .sidebar-item-icon {
+  color: #3A4A5C;
+}
+
+.sidebar-nav-item.sidebar-item-active .sidebar-item-icon {
+  color: #0F9D8A;
+}
+
+.sidebar-item-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-ai-badge {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #0F9D8A, #22C7D6);
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.sidebar-footer {
+  border-top: 1px solid #E2E8F0;
+}
+
+.sidebar-footer.sidebar-open {
+  padding: 12px;
+}
+
+.sidebar-footer.sidebar-collapsed {
+  padding: 8px 4px;
+}
+
+.sidebar-user-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.sidebar-user-card:hover {
+  background-color: #F7F9FC;
+}
+
+.sidebar-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #0F9D8A 0%, #22C7D6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.sidebar-user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar-user-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0B1220;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-user-title {
+  font-size: 11px;
+  color: #6B7C93;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-avatar-only {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+}
